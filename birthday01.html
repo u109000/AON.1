@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันเกิดนะ ที่รัก!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fce4ec;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 2s ease-out;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .signature {
+            font-style: italic;
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #9c27b0;
+        }
+
+        .hbd-img {
+            width: 250px;
+            height: auto;
+            max-width: 90%;
+            border-radius: 15px;
+            border: 5px solid #ff69b4;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ลูกโป่ง */
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 60px;
+            height: 80px;
+            background: red;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            animation: floatUp 8s linear infinite;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: #555;
+            transform: translateX(-50%);
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-110vh) scale(1.1); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ สุขสันต์วันเกิดนะ อ้อน ✨</h1>
+        
+        <img src="25244.jpg" alt="รูปแฟนสุดที่รัก" class="hbd-img">
+        
+        <p>
+            <b>พี่รักเรานะ</b> 💖 <br>
+            ขอให้ทุกวันของเรามีแต่ความสุขใจและมีแต่เรื่องดี ๆ นะ <br>
+            ขอบคุณที่เข้ามาเป็นรอยยิ้มและเป็นกำลังใจให้พี่นะ <br><br>
+            พี่จะอยู่ข้าง ๆ เราไม่ไปไหน จะไม่ทิ้งให้เราอยู่คนเดียว อยู่กับพี่ไปนาน ๆ นะ <br>
+            <b>พี่รักเรามากที่สุดในโลก!</b> <br>
+            อยู่ฉลองวันเกิดด้วยกันไปทุกปีเลยนะ ❤️
+        </p>
+        <p class="signature">
+          <br>
+            
+        </p>
+    </div>
+
+    <!-- ลูกโป่ง -->
+    <div class="balloon" style="left: 10%; background: #ff69b4; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 30%; background: #42a5f5; animation-delay: 2s;"></div>
+    <div class="balloon" style="left: 50%; background: #ffeb3b; animation-delay: 4s;"></div>
+    <div class="balloon" style="left: 70%; background: #66bb6a; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 90%; background: #ab47bc; animation-delay: 3s;"></div>
+</body>
+</html>
